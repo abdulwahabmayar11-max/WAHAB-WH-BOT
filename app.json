@@ -1,0 +1,26 @@
+{
+  "name": "WAHAB-WH-BOT",
+  "description": "Javascript WhatsApp bot customized by Wahab",
+  "logo": "https://pages.dev",
+  "repository": "https://github.com",
+  "keywords": ["bot", "whatsapp", "wahab"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Put your WAHAB-MD Session ID here.",
+      "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "Put your WhatsApp number with country code (e.g. 937xxxxxxxx).",
+      "required": true
+    }
+  },
+
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "stack": "heroku-24"
+}
